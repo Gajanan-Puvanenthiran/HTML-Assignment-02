@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registrartion Form</title>
+    <link rel="icon" href="/logo.png"
+    type="image/x-icon">
+    <style>
+        nav{
+            padding: 10px;
+            display: inline-block;
+            margin-right: 20px;
+           
+        }
+        body{
+            background-color: azure;
+        }
+        .navigation{
+            background-color: lightgray;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        input{
+            margin: 5px;
+        }
+        a{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; background-color: aquamarine;">Student Registration Form</h2>
+    <div style="text-align: center;">
+        <nav class="navigation">
+            <a href="/home.html">Home Page</a>
+            <a href="/studentDetails.html">Student details</a>
+            <a href="/contactus.html">Contact us</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/login.html">Login Page</a>
+        </nav>
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend>Resistration details</legend>
+
+            <p>
+                <label> Salutation<br>
+                <select name="salutation">
+                    <option>--None--</option>
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                </select>
+                </label>
+            </p>
+
+            <p>
+                <label>First Name: <input name="firstname"></label>
+            </p>
+
+            <p>
+                <label>Last Name: <input name="lastname"></label>
+            </p>
+
+            <p>
+                Gender : <br>
+                <label>Male
+                    <input type="radio" value="male" name="gender">
+                </label>
+                <label> Female
+                    <input type="radio" value="female" name="gender">
+                </label>
+            </p>
+
+            <p>
+                <label>Email: <input type="email" name="email"></label>
+            </p>
+
+            <p>
+                <label>Date of Birth: <input type="date" name="birthdate"></label>
+            </p>
+
+            <p>
+                <label>Address: 
+                    <br>
+                    <textarea name="address" rows="3" cols="20"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <h4>Skills:</h4>
+                <ul style="list-style-type: none;">
+                    <li><input 
+                        type="checkbox"
+                        name="skill"
+                        value="contentwriting">
+                        Content-writing
+                    </li>
+                    <li><input 
+                        type="checkbox"
+                        name="skill"
+                        value="programming languages">
+                        Programming Languages
+                    </li>
+                    <li><input
+                        type="checkbox"
+                        name="skill"
+                        value="sports">
+                        Sports
+                    </li>
+                    <li><input 
+                        type="checkbox"
+                        name="skill"
+                        value="critical thinging and problem solving">
+                        Critical thinking and Problem Solving
+                    </li>
+        </ul>
+            </p>
+
+            <div style="text-align: center;">
+                <button type="submit">Submit</button>
+            </div>
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
